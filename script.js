@@ -1,6 +1,15 @@
 $(document).ready(function() {
 
   // global variables
+  var event08 = "The quick brown fox jumps over the lazy dog";
+  var event09 = "The quick brown fox jumps over the lazy dog";
+  var event10 = "The quick brown fox jumps over the lazy dog";
+  var event11 = "The quick brown fox jumps over the lazy dog";
+  var event12 = "The quick brown fox jumps over the lazy dog";
+  var event13 = "The quick brown fox jumps over the lazy dog";
+  var event14 = "The quick brown fox jumps over the lazy dog";
+  var event15 = "The quick brown fox jumps over the lazy dog";
+  var event16 = "The quick brown fox jumps over the lazy dog";
   
   // get current date and time
   var timeNow = moment();
@@ -12,7 +21,7 @@ $(document).ready(function() {
   // get reference to each element
   $("#currentDay").text(date);
   
-  // add class for past, present, future
+  // add classes for past, present, future
   $("textarea").addClass(function() {
     var dataHour = this.getAttribute("data-hour");
     if (dataHour < hour) {
@@ -29,6 +38,15 @@ $(document).ready(function() {
   // get saved events from local storage
   
   // display events in time blocks
+  $("#event08").text(event08);
+  $("#event09").text(event09);
+  $("#event10").text(event10);
+  $("#event11").text(event11);
+  $("#event12").text(event12);
+  $("#event13").text(event13);
+  $("#event14").text(event14);
+  $("#event15").text(event15);
+  $("#event16").text(event16);
   
   // enter or edit event in time block
   
