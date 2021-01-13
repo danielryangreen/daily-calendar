@@ -23,7 +23,7 @@ $(document).ready(function() {
   
   // add classes for past, present, future
   $("textarea").addClass(function() {
-    var dataHour = this.getAttribute("data-hour");
+    var dataHour = $(this).attr("data-hour");
     if (dataHour < hour) {
       return "past";
     }
@@ -48,8 +48,10 @@ $(document).ready(function() {
   $("#event15").text(event15);
   $("#event16").text(event16);
   
-  // enter or edit event in time block
-  
   // listen for button and save event in local storage
+  $("button").click(function() {
+    console.log($(this).prev().attr("data-hour"));
+    console.log($(this).prev().val());
+  });
 
 });
