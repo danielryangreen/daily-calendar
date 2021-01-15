@@ -9,7 +9,7 @@ $(document).ready(function() {
   console.log(hour);
   
   
-  // add classes for past, present, future
+  // add class for past, present, future
   $("textarea").addClass(function() {
     var index = $(this).attr("data-index");
     if (index < hour) {
@@ -28,8 +28,6 @@ $(document).ready(function() {
     $("textarea").text(function() {
       var index = $(this).attr("data-index");
       var event = localStorage.getItem(index);
-      console.log(index);
-      console.log(event);
       return event;
     });
   }
